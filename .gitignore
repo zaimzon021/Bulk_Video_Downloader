@@ -1,4 +1,9 @@
-# Cookies — never commit these, they contain your account session
+# Large zip/archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
 cookies.txt
 
 # Downloaded content
