@@ -1,0 +1,30 @@
+# Cookies — never commit these, they contain your account session
+cookies.txt
+
+# Downloaded content
+channel_pfps/
+GizaToys/
+*.mp4
+*.webm
+*.mkv
+
+# yt-dlp state files
+history.txt
+links.txt
+
+# Large binaries — download these separately
+yt-dlp.exe
+deno.exe
+deno.old.exe
+ffmpeg.exe
+ffprobe.exe
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+
+# Nested duplicate folder
+Dp Downloader/
