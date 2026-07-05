@@ -171,12 +171,12 @@ def run_download():
         "-N", "1",
         "--sleep-interval", "10",
         "--download-archive", "history.txt",
-        "-f", "bv+ba/b",
+        "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio/best",
         "--merge-output-format", "mp4",
         "--cookies", COOKIES_FILE,
         "--js-runtime", "deno",
         "--user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "--extractor-args", "youtube:player_client=web_creator",
+        "--extractor-args", "youtube:player_client=web_embedded",
         "-o", OUTPUT_TEMPLATE,
     ]
 

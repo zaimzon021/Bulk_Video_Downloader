@@ -93,14 +93,14 @@ def run_download(interval, cookies_path, log, on_done):
         "-N", "1",
         "--sleep-interval", str(interval),
         "--download-archive", HISTORY_FILE,
-        "-f", "bv+ba/b",
+        "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio/best",
         "--merge-output-format", "mp4",
         "--cookies", cookies_path,
         "--js-runtime", "deno",
         "--user-agent",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "--extractor-args", "youtube:player_client=web_creator",
+        "--extractor-args", "youtube:player_client=web_embedded",
         "-o", OUTPUT_TPL,
     ]
     log("\n► " + " ".join(f'"{a}"' if " " in a else a for a in cmd) + "\n")
